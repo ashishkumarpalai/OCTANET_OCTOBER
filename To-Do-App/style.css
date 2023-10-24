@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-image: url('a.jpg'); /* Specify the URL of the image */
+    background-size: cover; /* This property ensures the image covers the entire background */
+    background-repeat: no-repeat; /* This property prevents the image from repeating */
+
+}
+
+/* Add this CSS to your <style> block in the <head> section */
+.animated-button {
+    background-color: #FF4500;
+    /* Initial background color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    animation: colorChange 2s infinite alternate;
+    /* Animation definition */
+}
+
+@keyframes colorChange {
+    0% {
+        background-color: #FF4500;
+    }
+
+    50% {
+        background-color: #44a8d1;
+    }
+
+    100% {
+        background-color: #FF4500;
+    }
+}
+
+#todo-list {
+    width: 70%;
+    margin: auto;
+}
+
+h1 {
+    color: #000000;
+    background-color: #44a8d1;
+    padding: 10px;
+    margin: 0;
+}
+
+.add-task input,
+.add-task select {
+    padding: 10px;
+    margin: 5px;
+    width: 200px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+li.completed {
+    text-decoration: line-through;
+    background-color: #e0e0e0;
+}
+
+/* Style labels */
+li[label="Work"] {
+    background-color: #FFD700;
+    /* Yellow */
+}
+
+li[label="Personal"] {
+    background-color: #87CEEB;
+    /* Sky Blue */
+}
+
+li[label="Urgent"] {
+    background-color: #FF4500;
+    /* Orange Red */
+}
+
+.add-task button,
+#clear-button {
+    background-color: #44a8d1;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.add-task button:hover,
+#clear-button:hover {
+    background-color: #357ea9;
+}
+
+.search-filter {
+    margin: 20px;
+}
+
+.search-filter input,
+.search-filter select {
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #ccc;
+}
+
+.search-filter select {
+    width: 150px;
+}
